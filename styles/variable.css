@@ -1,0 +1,20 @@
+root {
+    —default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    —heading-font: "Jost", sans-serif;
+    —nav-font: "Poppins", sans-serif;
+}
+:root {
+    --nav-color: #ffffff;
+    --nav-hover-color: #47b2e4;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-hover-color: #47b2e4;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    —default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    —heading-font: "Jost", sans-serif;
+    —nav-font: "Poppins", sans-serif;
+    —background-color: #f5f6f8;
+}
+
