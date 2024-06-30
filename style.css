@@ -68,6 +68,8 @@ color-mix(in srgb, var(--default-color), transparent 60%);
 .title__light {
     color: color-mix(in srgb, var(--default-color), transparent 30%);
     font-family: var(--default-font);
+    padding: 0;
+    margin: 0;
 }
 
 #why-us, #skills {
@@ -86,6 +88,7 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     padding: 20px 10px 20px 20px;
 }
 
@@ -111,6 +114,13 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px 30px;
+}
+
+#skills_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 #why-us__right > img { 
@@ -196,7 +206,82 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     padding: 20px 0 20px 0;
 }
 
+#skills__container {
+    padding-top: 10px;
+}
+
+#skills__content {
+    position: relative;
+    padding-bottom: 10px;
+    font-family: var(--heading-font);
+    font-size: .5rem;
+    font-weight: 550;
+}
+
 #skills__left > img { 
     width: 100%;
     object-fit: cover;
+}
+
+#bar__100 {
+    width: 100%;
+    height: 5px;
+    background-color: var(--heading-color);
+}
+
+#skills_bar__90 {
+    display: flex;
+    gap: 0;
+}
+
+#skills_bar__90 > div:first-of-type {
+    width: 90%;
+    height: 5px;
+    background-color: var(--heading-color);
+}
+
+#skills_bar__90 > div:last-of-type {
+    width: 10%;
+    height: 5px;
+    background-color: var(--background-color);
+}
+
+#skills_bar__75 {
+    display: flex;
+    gap: 0;
+}
+
+#skills_bar__75 > div:first-of-type {
+    width: 75%;
+    height: 5px;
+    background-color: var(--heading-color);
+}
+
+#skills_bar__75 > div:last-of-type {
+    width: 25%;
+    height: 5px;
+    background-color: var(--background-color);
+}
+
+#skills_bar__55 {
+    display: flex;
+    gap: 0;
+}
+
+#skills_bar__55 > div:first-of-type {
+    width: 55%;
+    height: 5px;
+    background-color: var(--heading-color);
+}
+
+#skills_bar__55 > div:last-of-type {
+    width: 45%;
+    height: 5px;
+    background-color: var(--background-color);
+}
+
+#skills__percentage {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
