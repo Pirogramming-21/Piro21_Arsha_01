@@ -1,0 +1,202 @@
+:root {
+    --nav-color: #ffffff;
+    --nav-hover-color: #47b2e4;
+    --nav-mobile-background-color: #ffffff;
+    --nav-dropdown-background-color: #ffffff;
+    --nav-dropdown-color: #444444;
+    --nav-dropdown-hover-color: #47b2e4;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --background-color: #f5f6f8;
+}
+.italics {
+    font-style: italic;
+}
+section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--heading-color);
+}
+.section-title h2:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: 
+color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.title__bold {
+    color: var(--heading-color);
+    font-size: 32px;   
+    font-family: var(--heading-font);
+    padding: 0;
+    margin: 0;
+    line-height: 2.5rem;
+}
+
+.title__bold > b {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.title__light {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    font-family: var(--default-font);
+}
+
+#why-us, #skills {
+    display: grid;
+    font-size: .9rem;
+    gap: 40px;
+}
+
+#why-us {
+    background-color: var(--background-color);
+    grid-template-columns: 12fr 9fr;
+}
+
+#why-us__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 10px 20px 20px;
+}
+
+#why-us__ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#why-us__ul > li {
+    position: relative;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .3);
+}
+
+#why-us__ul > li > div {
+    padding: 5px;
+}
+
+#why-us__right, #skills__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 30px;
+}
+
+#why-us__right > img { 
+    width: 90%;
+    object-fit: cover;
+}
+
+#list__title {
+    display: flex;
+    gap: 10px;
+    justify-self: center;
+    align-items: center;
+    color: var(--heading-color);
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+#list__title:hover {
+    color: var(--nav-dropdown-hover-color);
+}
+
+
+#list__num {
+    margin-right: 10px;
+    color: var(--nav-dropdown-hover-color);
+}
+
+#content-btn1, #content-btn2, #content-btn3{
+    display: none;
+}
+
+#list__content {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+
+#content-btn1:checked ~ #list__content, 
+#content-btn2:checked ~ #list__content, 
+#content-btn3:checked ~ #list__content{
+	opacity: 1;
+	visibility: visible;
+    display: block;
+    position: relative;
+    transition: opacity .3s, visibility .3s ease;
+}
+
+#content-btn1:checked ~ label #list__title, 
+#content-btn2:checked ~ label #list__title, 
+#content-btn3:checked ~ label #list__title {
+    color: var(--nav-dropdown-hover-color);
+}
+
+#list__toggle {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-weight: 400;
+    transition: .3s;
+}
+
+#list__toggle:hover {
+    color: var(--nav-dropdown-hover-color);
+}
+
+#content-btn1:checked + label #list__title #list__toggle, 
+#content-btn2:checked + label #list__title #list__toggle, 
+#content-btn3:checked + label #list__title #list__toggle {
+    transform: rotate(90deg);
+    color: var(--nav-dropdown-hover-color);
+}
+/*
+#content-btn1:checked ~ #why-us__right > img, #content-btn2:checked ~ #why-us__right > img, #content-btn3:checked ~ #why-us__right > img {
+    transform: scale(1.0);
+}
+
+ #content-btn1:checked ~ #why-us__right img {
+    transform: scale(1.2); 
+} */
+#skills {
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    padding: 20px 0 20px 0;
+}
+
+#skills__left > img { 
+    width: 100%;
+    object-fit: cover;
+}
