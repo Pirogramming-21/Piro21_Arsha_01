@@ -88,11 +88,12 @@ ul {
     padding: 20px 0 20px 30px;
 }
 
-#skills_right {
+#skills__right {
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
+    padding-right: 50px;
 }
 
 #why-us__right > img { 
