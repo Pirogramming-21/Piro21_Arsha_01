@@ -13,7 +13,7 @@
 .container {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
-    width: 112%;
+    width: 100%;
     padding-right: calc(var(--bs-gutter-x)* .5);
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin-right: auto;
@@ -34,6 +34,20 @@
         max-width: 960px;
     }
 }
+@media (min-width:992px){
+    .col {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+}
+@media (min-width:1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
+body{
+    margin: 0;
+}
 
 #preview h2 {    
     font-size: 32px;
@@ -52,7 +66,6 @@ section {
     padding: 60px 0;
 }
 .testimonials-top {
-    background-color: white;
     padding: 0 12px 60px;
     text-align: center;
     position: relative;
@@ -148,19 +161,78 @@ section {
     background-color: #47b2e4;
 }
 /* faq-2부분 */
-@media (min-width:1200px){
-    .faq-2-bottom {
-        max-width: 1140px;
-    }
-}
-@media (min-width:992px){
-    .faq-2-bottom {
-        max-width: 960x;
-    }
-}
-@media (min-width:768px){
-    .faq-2-bottom {
-        max-width: 720px;
-    }
+#faq-2 {
+    background-color: #f5f6f8;
 }
 
+
+.faq-2-content {
+    justify-content: center !important;
+}
+.row {
+    justify-content: center !important;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.faq-2 .faq-container {
+    margin-top: 15px;
+}
+.faq-container .faq-item {
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.faq-item .faq-icon {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+    font-size: 20px;
+    line-height: 0;
+    transition: 0.3s;
+    color: #47b2e4;;
+}
+.faq-icon::before {
+    display: inline-block;
+    content: "\f505"; 
+}
+.faq-item h3 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 30px 0 32px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.faq-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 0.3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+.faq-content > p {
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.faq-toggle {
+    position: absolute;
+    top: 29px;
+    right: 20px;
+    font-size: 16px;
+    line-height: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.faq-toggle::before {
+    content: "\f285";
+    font-family: bootstrap-icons;
+}
