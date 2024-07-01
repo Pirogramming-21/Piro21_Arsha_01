@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Kang_style.css">
-    <link rel="stylesheet" href="kw_style.css">
-    <link rel="stylesheet" href="minsoo_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./minsoo_style.css">
 </head>
 <body>
     <header id="header">
@@ -26,468 +24,242 @@
                 <body>
                     <header id="header" class="header d-flex~~~"></header>
                     <main class="main">
-                        <section id="hero"></section>
-                        <section id="clients"></section>
-                        <section id="about"></section>
-                        <!-- 1번 파트 -->
-                        <section id="why-us">
-                            <div id="why-us__left">
-                                <div id="why-us__title">
-                                    <p class="title__bold"><span>Eum ipsam laborum deleniti</span> <b>velit pariatur architecto aut nigil</b></p>
-                                    <p class="title__light"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</span></p>
-                                </div>
-                                <div id="why-us__content">
-                                    <ul id="why-us__ul">
-                                        <li>
-                                            <input id="content-btn1" type="checkbox"/>
-                                            <label for="content-btn1">
-                                                <div id="list__title">
-                                                    <span><span id="list__num">01</span>Non consectetur a erat nam at lectus urna duis?</span>
-                                                </div>
-                                            </label>
-                                            <label for="content-btn1">
-                                                <div id="list__toggle">></div>
-                                            </label>
-                                            <div id="list__content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
-                                        </li>
-                                        <li>
-                                            <input id="content-btn2" type="checkbox"/>
-                                            <label for="content-btn2">
-                                                <div id="list__title">
-                                                    <span><span id="list__num">02</span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
-                                                </div>
-                                            </label>
-                                            <label for="content-btn2">
-                                                <div id="list__toggle">></div>
-                                            </label>
-                                            <div id="list__content">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
-                                        </li>
-                                        <li>
-                                            <input id="content-btn3" type="checkbox"/>
-                                            <label for="content-btn3">
-                                                <div id="list__title">
-                                                    <span><span id="list__num">03</span>Dolor sit amet consectetur adipiscing elit pellentesque?</span>
-                                                </div>
-                                            </label>
-                                            <label for="content-btn3">
-                                                <div id="list__toggle">></div>
-                                            </label>
-                                            <div id="list__content">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
-                                        </li>
-                                    </ul>   
-                                </div>
+                        <!-- portfolio section -->
+                        <section id="portfolio">
+                            <div class="section-title">
+                                <h2>portfolio</h2>
+                                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
                             </div>
-                            <div id="why-us__right">
-                                <img src="./img/why-us.png" alt="why-us image">
-                            </div>
-                        </section>
-                        <section id="skills">
-                            <div id="skills__left">
-                                <img src="./img/skills.png" alt="why-us image">
-                            </div>
-                            <div id="skills__right">
-                                <div id="skills_title">
-                                    <p class="title__bold"><b>Voluptatem dignissimos provident quasi corporis voluptas</b></p>
-                                    <p class="title__light"><span class="italics">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
-                                </div>
-                                <div id="skills__container">
-                                    <div id="skills__content">
-                                        <div id="skills__name">HTML</div>
-                                        <div id="skills_bar__100">
-                                            <div id="bar__100"></div>
-                                        </div>
-                                        <div id="skills__percentage">100%</div>
+                                <ul class="portfolio-filters">
+                                    <div class="portfolio_filter_container">
+                                        <li class = "filter-active">All</li>
+                                        <li>App</li>
+                                        <li>Card</li>
+                                        <li>Web</li>
                                     </div>
-                                    <div id="skills__content">
-                                        <div id="skills__name">CSS</div>
-                                        <div id="skills_bar__90">
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div id="skills__percentage">90%</div>
-                                    </div>
-                                    <div id="skills__content">
-                                        <div id="skills__name">JAVASCRIPT</div>
-                                        <div id="skills_bar__75">
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div id="skills__percentage">75%</div>
-                                    </div>
-                                    <div id="skills__content">
-                                        <div id="skills__name">PHOTOSHOP</div>
-                                        <div id="skills_bar__55">
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                        <div id="skills__percentage">55%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- 1200px: 1*4->2*2 반응형 픽셀 기준(services) -->
-                        <section id="services">
-                            <div id="services__title">
-                                <h2>SERVICES</h2>
-                                <p><span>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</span></p>
-                            </div>
-                            <div id="services__content">
-                                <ul id="services__list">
-                                    <li>
-                                        <div id="services__icon">
-                                            <i class="bi bi-activity icon"></i>
-                                        </div>
-                                        <div id="services__name"><span>Lorem Ipsum</span></div>
-                                        <div id="services__description">
-                                            <span>Voluptatatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div id="services__icon">
-                                            <i class="bi bi-bounding-box-circles icon"></i>
-                                        </div>
-                                        <div id="services__name"><span>Sed ut perspici</span></div>
-                                        <div id="services__description"><span>Duis aute irure door in reprehenderit in voluptate velit esse cillum dolore</span></div>
-                                    </li>
-                                    <li>
-                                        <div id="services__icon">
-                                            <i class="bi bi-calendar4-week icon"></i>
-                                        </div>
-                                        <div id="services__name"><span>Magni Dolores</span></div>
-                                        <div id="services__description"><span>Excepteur sint occascat cupidatat non proident, sunt in culpa qui officia</span></div>
-                                    </li>
-                                    <li>
-                                        <div id="services__icon">
-                                            <i class="bi bi-broadcast icon"></i>
-                                        </div>
-                                        <div id="services__name"><span>Nemo Enim</span></div>
-                                        <div id="services__description"><span>At vero eos et accusamust et iusto odio dignissimos ducimus qui blanditiis</span></div>
-                                    </li>
                                 </ul>
-                            </div>
-                        </section>
-                        <section id="call-to-action">
-                            <div id="call-to-action__container">
-                                <div id="call-to-action__left">
-                                    <div id="call-to-action__title">
-                                        <span>Call To Action</span>
-                                    </div>
-                                    <div id="call-to-action__content"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
-                                </div>
-                                <div id="call-to-action__right">
-                                    <div id="call-to-action__button"><a href="#">Call To Action</a></div>
-                                </div>
-                            </div>
-                        </section>
-                        <!--2번 파트  -->
-                        <section id="portfolio"></section>
-                        <section id="team"></section>
-                        <section id="pricing"></section>
-                        <!-- 3번 파트 -->
-                        <section id="testimonials">
-                            <div class="testimonials-top container">
-                                <h2>TESTIMONIALS</h2>
-                                <p id="testimonials-top--content">
-                                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-                                </p>
-                            </div>
-                            <div class="testimonials-bottom container">
-                                <div class="swipe-wrapper">
-                                    <div class="testimonials-bottom--item">
-                                        <img src="./part4img/testimonials-3.jpg" alt="testimonials사진">
-                                        <h3>Jena Karlis</h3>
-                                        <h4>Store Owner</h4>
-                                        <div class="stars">
-                                            <p class="stars-fill">⭐⭐⭐⭐⭐</p>
-                                        </div>
-                                        <p>
-                                            <img id="front" src="./part4img/큰따옴표앞.png" alt="큰따옴표">
-                                            <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                                            <img id="back" src="./part4img/큰따옴표뒤.png" alt="큰따옴표">
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="swipe-bar">
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                    <span class="swipe-bar--bullet"></span>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="faq-2">
-                            <div class="testimonials-top container">
-                                
-                                <h2>Frequently Asked Questions</h2>
-                                <p id="testimonials-top--content">
-                                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
-                                </p>
-                            </div>
-                            <div class="container">
-                                <div class="row faq-2-content">
-                                    <div class="col">
-                                        <div class="faq-container container">
-                                            <div class="faq-item">
-                                            <input id="faq-btn1" type="checkbox"/>
-                                            <label for="faq-btn1">
-                                                <i class="faq-icon bi bi-question-circle"></i>
-                                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                                            </label>
-                                                <div class="faq-content">
-                                                    <p>
-                                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                                    </p>
-                                                </div>
-                                                <label for="faq-btn1"><i class="faq-toggle"></i></label>
-                                            </div>
-                                            <div class="faq-item">
-                                                <input id="faq-btn2" type="checkbox"/>
-                                                    <label for="faq-btn2">
-                                                    <i class="faq-icon bi bi-question-circle"></i>
-                                                    <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                                                </label>
-                                                <div class="faq-content">
-                                                    <p>
-                                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                                    </p>
-                                                </div>
-                                                <label for="faq-btn2"><i class="faq-toggle"></i></label>
-                                            </div>
-                                            <div class="faq-item">
-                                                <input id="faq-btn3" type="checkbox"/>
-                                                <label for="faq-btn3">
-                                                    <i class="faq-icon bi bi-question-circle"></i>
-                                                    <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                                                </label>
-                                                <div class="faq-content">
-                                                    <p>
-                                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                                    </p>
-                                                </div>
-                                                <label for="faq-btn3"><i class="faq-toggle"></i></label>
-                                            </div>
-                                            <div class="faq-item">
-                                                <input id="faq-btn4" type="checkbox"/>
-                                                <label for="faq-btn4">
-                                                    <i class="faq-icon bi bi-question-circle"></i>
-                                                    <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
-                                                </label>
-                                                <div class="faq-content">
-                                                    <p>
-                                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                                    </p>
-                                                </div>
-                                                <label for="faq-btn4"><i class="faq-toggle"></i></label>
-                                            </div>
-                                            <div class="faq-item">
-                                                <input id="faq-btn5" type="checkbox"/>
-                                                <label for="faq-btn5">
-                                                    <i class="faq-icon bi bi-question-circle"></i>
-                                                    <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
-                                                </label>
-                                                <div class="faq-content">
-                                                    <p>
-                                                        Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                                                    </p>
-                                                </div>
-                                                <label for="faq-btn5"><i class="faq-toggle"></i></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section id="contact">
-                            <div class="testimonials-top container">
-                                <h2>CONTACT</h2>
-                                <p id="testimonials-top--content">
-                                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
-                                </p>
-                            </div>
-                            <div class="container">
-                                <div class="contact-row">
-                                    <div class="col-lg-5">
-                                        <div class="info-wrap">
-                                            <div class="info-item d-flex">
-                                                <i id="address" class="contact-bi"></i>
-                                                <div>
-                                                    <h3>Address</h3>
-                                                    <p>A108 Adam Street, New York, NY 535022</p>
-                                                </div>
-                                            </div>
-                                            <div class="info-item d-flex">
-                                                <i id="call-us" class="contact-bi"></i>
-                                                <div>
-                                                    <h3>Call Us</h3>
-                                                    <p>+1 5589 55488 55</p>
-                                                </div>
-                                            </div>
-                                            <div class="info-item d-flex">
-                                                <i id="email-us" class="contact-bi"></i>
-                                                <div>
-                                                    <h3>Email Us</h3>
-                                                    <p>info@example.com</p>
-                                                </div>
-                                            </div>
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
-                                            </iframe>
+                            <div class="item-container">
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
                                         </div>
-                                        
                                     </div>
-                                    <div class="col-lg-7">
-                                        <form action="form/contact.php" class="contact-form">
-                                            <div class="contact-row">
-                                                <div class="col-md6">
-                                                    <label for="name-field" class="pb-2">Your Name</label>
-                                                    <input type="text" id="name-field" class="form-control">
-                                                </div>
-                                                <div class="col-md6">
-                                                    <label for="name-field" class="pb-2">Your Email</label>
-                                                    <input type="text" id="name-field" class="form-control">
-                                                </div>
-                                                <div class="col-md12">
-                                                    <label for="name-field" class="pb-2">Subject</label>
-                                                    <input type="text" id="name-field" class="form-control">
-                                                </div>
-                                                <div class="col-md12">
-                                                    <label for="name-field" class="pb-2">Message</label>
-                                                    <textarea rows="14" id="message-field" class="form-control"></textarea>
-                                                </div>
-                                                <div class="col-md12 text-center">
-                                                    <button id="send">Send Message</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" alt="">
+                                    <div class="item-info">
+                                        <h3>App 1</h3>
+                                        <p>Lorem ipsum, dolor sit</p>
+                                        <div class="icons">
+                                            <img src="./minsoo_img/scale-up.png" alt="" class="search-plus">
+                                            <img src="./minsoo_img/link.png" alt="" class="link">
+                                        </div>
+                                    </div>
+                                </div>
+
+                
+                            </div>
+                        </section>
+                        <!-- team section -->
+                        <section id="team">
+                            <div class="section-title">
+                                <h2>team</h2>
+                                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                            </div>
+                            <div class="team-container">
+                            <div class="team-member">
+                                <div class="pic">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="Walter White">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Walter White</h4>
+                                    <span>Chief Executive Officer</span>
+                                    <p>Explicabo voluptatem mollitia et repellat qui dolorem quasi</p>
+                                    <div class="social">
+                                        <img src="./minsoo_img/social.png" alt="social image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="pic">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="Sarah Jhonson">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Product Manager</span>
+                                    <p>Aut maiores voluptates amet et quis praesentium qui senda </p>
+                                    <div class="social">
+                                        <img src="./minsoo_img/social.png" alt="social image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="pic">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="William Anderson">
+                                </div>
+                                <div class="member-info">
+                                    <h4>William Anderson</h4>
+                                    <span>CTO</span>
+                                    <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                                    <div class="social">
+                                        <img src="./minsoo_img/social.png" alt="social image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="pic">
+                                    <img src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/team/team-1.jpg" alt="Amanda Jepson">
+                                </div>
+                                <div class="member-info">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                    <p>Dolorum tempora officiis odiit laborum officiis et et accusamus</p>
+                                    <div class="social">
+                                        <img src="./minsoo_img/social.png" alt="social image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <!-- pricing section -->
+                        <section id="pricing">
+                            <div class="section-title">
+                                <h2>Pricing</h2>
+                                <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                            </div>
+                            <div class="pricing-plan">
+                                <div class="plan">
+                                    <h3>Free Plan</h3>
+                                    <p class="price">$0 / month</p>
+                                    <ul>
+                                        <li>Quam adipiscing vitae proin</li>
+                                        <li>Nec feugiat nisl pretium</li>
+                                        <li>Nulla at volutpat diam uteera</li>
+                                        <li class="na">Pharetra massa massa ultricies</li>
+                                        <li class="na">Massa ultricies mi quis hendrerit</li>
+                                    </ul>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-buy">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="plan">
+                                    <h3>Business Plan</h3>
+                                    <p class="price">$29 / month</p>
+                                    <ul>
+                                        <li>Quam adipiscing vitae proin</li>
+                                        <li>Nec feugiat nisl pretium</li>
+                                        <li>Nulla at volutpat diam uteera</li>
+                                        <li>Pharetra massa massa ultricies</li>
+                                        <li>Massa ultricies mi quis hendrerit</li>
+                                    </ul>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-buy" id = "plan-middle">Buy Now</a>
+                                    </div>
+                                </div>
+                                <div class="plan">
+                                    <h3>Business Plan</h3>
+                                    <p class="price">$29 / month</p>
+                                    <ul>
+                                        <li>Quam adipiscing vitae proin</li>
+                                        <li>Nec feugiat nisl pretium</li>
+                                        <li>Nulla at volutpat diam uteera</li>
+                                        <li>Pharetra massa massa ultricies</li>
+                                        <li>Massa ultricies mi quis hendrerit</li>
+                                    </ul>
+                                    <div class="btn-wrap">
+                                        <a href="#" class="btn-buy">Buy Now</a>
                                     </div>
                                 </div>
                             </div>
                         </section>
                     </main>
-                    <footer id="footer" class="footer">
-                        <div class="footer-newsletter">
-                            <div class="container">
-                                <div class="row footer-row">
-                                    <div class="col-lg-6">
-                                        <h4>Join Our Newsletter</h4>
-                                        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-                                        <form action="forms/newsletter.php" class="php-email-form">
-                                            <div class="newsletter-form">
-                                                <input type="email" id="email">
-                                                <input type="submit" value="Subscribe">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container footer-top">
-                            <div class="row">
-                                <div class="col-lg-4 col-md6 footer-about">
-                                    <a href="#" class="d-flex">
-                                        <span class="sitename">ARSHA</span>
-                                    </a>
-                                    <div class="footer-contact pt-3">
-                                        <p>A108 Adam Street</p>
-                                        <p>New York, NY 535022</p>
-                                        <p>
-                                            <strong>Phone:</strong>
-                                            <span>+1 5589 55488 55</span>
-                                        </p>
-                                        <p>
-                                            <strong>Email:</strong>
-                                            <span>info@example.com</span>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-2 col-md3 footer-link">
-                                    <h4>Useful Links</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">About us</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Services</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Terms of service</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-2 col-md3 footer-link">
-                                    <h4>Our Services</h4>
-                                    <ul>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Web Design</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Web Development</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Product Management</a>
-                                        </li>
-                                        <li>
-                                            <i class="bi-right"></i>
-                                            <a href="#">Marketing</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-4 col-md12">
-                                    <h4>Follow Us</h4>
-                                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-                                    <div class="social-links d-flex">
-                                        <a href="#">
-                                            <i class="bi twitter"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="bi facebook"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="bi instagram"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="bi linkedin"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container copyright">
-                            <p>
-                                © 
-                                <span>Copyright</span> 
-                                <strong class="px-1 sitename">Arsha</strong> 
-                                <span>All Rights Reserved</span>
-                            </p>
-                            <div class="credits">
-                                Designed by 
-                                <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                              </div>
-                        </div>
-                    </footer>
-                    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center active">
-                        <i class="bi bi-arrow-up-short">
-                        
-                        </i>
-                    </a>
+                    <footer id="footer" class="footer"></footer>
                     <!-- 4번 파트 -->
                 </body>
             </html>
-            </div>
     </div>
 </body>
 </html>
