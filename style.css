@@ -105,12 +105,14 @@ label {
     justify-self: center;
     align-items: center;
     color: var(--heading-color);
-    font-weight: 700;
+    font-weight: 500;
     margin-right: 50px;
+    font-family: var(--heading-font);
 }
 
 #list__title:hover {
     color: var(--nav-dropdown-hover-color);
+    transition: .5s;
 }
 
 
@@ -128,6 +130,8 @@ label {
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 0 !important; /* important 빼면 어디에서 패딩이 생기는걸까~ */
+    /* line-height: 120%; */
 }
 
 #content-btn1:checked ~ #list__content, 
