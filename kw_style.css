@@ -464,10 +464,6 @@ label {
     border-radius: 20px;
 }
 
-#test {
-    height: 400px;
-}
-
 #services__list > li, #why-us__ul > li {
     display: block;
 }
