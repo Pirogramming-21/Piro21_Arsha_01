@@ -122,11 +122,11 @@ label {
     color: var(--nav-dropdown-hover-color);
 }
 
-#content-btn1, #content-btn2, #content-btn3{
+#content-btn1, #content-btn2, #content-btn3, #faq-btn1,#faq-btn2, #faq-btn3, #faq-btn4, #faq-btn5 {
     display: none;
 }
 
-#list__content {
+#list__content, .faq-content {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -135,9 +135,19 @@ label {
     /* line-height: 120%; */
 }
 
+.faq-item label > i ~ h3:hover {
+    color: var(--nav-dropdown-hover-color);
+}
+
 #content-btn1:checked ~ #list__content, 
 #content-btn2:checked ~ #list__content, 
-#content-btn3:checked ~ #list__content{
+#content-btn3:checked ~ #list__content,
+#faq-btn1:checked + label + .faq-content,
+#faq-btn2:checked + label + .faq-content,
+#faq-btn3:checked + label + .faq-content,
+#faq-btn4:checked + label + .faq-content,
+#faq-btn5:checked + label + .faq-content
+{
     max-height: 500px;
     opacity: 1;
     transition: max-height 0.5s ease, opacity 0.5s ease;
@@ -145,7 +155,14 @@ label {
 
 #content-btn1:checked ~ label #list__title, 
 #content-btn2:checked ~ label #list__title, 
-#content-btn3:checked ~ label #list__title {
+#content-btn3:checked ~ label #list__title,
+#faq-btn1:checked ~ label > i ~ h3,
+#faq-btn2:checked ~ label > i ~ h3,
+#faq-btn3:checked ~ label > i ~ h3,
+#faq-btn4:checked ~ label > i ~ h3,
+#faq-btn5:checked ~ label > i ~ h3
+
+{
     color: var(--nav-dropdown-hover-color);
 }
 
@@ -157,13 +174,23 @@ label {
     transition: .5s;
 }
 
-#list__toggle:hover {
+.faq-toggle {
+    transition: .5s;
+}
+
+#list__toggle:hover, .faq-toggle:hover {
     color: var(--nav-dropdown-hover-color);
 }
 
 #content-btn1:checked + label + label #list__toggle, 
 #content-btn2:checked + label + label #list__toggle, 
-#content-btn3:checked + label + label #list__toggle {
+#content-btn3:checked + label + label #list__toggle, 
+#faq-btn1:checked ~ label > .faq-toggle,
+#faq-btn2:checked ~ label > .faq-toggle,
+#faq-btn3:checked ~ label > .faq-toggle,
+#faq-btn4:checked ~ label > .faq-toggle,
+#faq-btn5:checked ~ label > .faq-toggle
+{
     transform: rotate(90deg);
     color: var(--nav-dropdown-hover-color);
 }

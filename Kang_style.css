@@ -275,10 +275,10 @@ section {
 }
 .faq-content {
     display: grid;
-    grid-template-rows: 0fr;
+    /* grid-template-rows: 0fr;
     transition: 0.3s ease-in-out;
     visibility: hidden;
-    opacity: 0;
+    opacity: 0; */
 }
 .faq-content > p {
     margin-top: 0;
