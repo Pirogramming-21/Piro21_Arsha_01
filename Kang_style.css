@@ -364,6 +364,10 @@ section {
     justify-content: center;
     align-items: center;
 }
+.contact-bi:hover{
+    color: white;
+    background: #47b2e4;
+}
 
 .info-item > div > h3 {
     padding: 0;
@@ -489,6 +493,9 @@ input[type=email] {
     width: 100%;
     background-color: color-mix(in srgb, #ffffff, transparent 50%);
     color: #444444;
+}
+input[type=email]:focus {
+    border: 0;
 }
 .footer .footer-newsletter .newsletter-form input[type=submit] {
     border: 0;
