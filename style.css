@@ -59,7 +59,7 @@ label {
 }
 
 #why-us {
-    background-color: var(--background-color);
+    background-color: #f5f6f8;
     grid-template-columns: 12fr 9fr;
 }
 
@@ -237,7 +237,7 @@ label {
 #skills_bar__90 > div:last-of-type {
     width: 10%;
     height: 5px;
-    background-color: var(--background-color);
+    background-color: #f5f6f8;
 }
 
 #skills_bar__75 {
@@ -254,7 +254,7 @@ label {
 #skills_bar__75 > div:last-of-type {
     width: 25%;
     height: 5px;
-    background-color: var(--background-color);
+    background-color: #f5f6f8;
 }
 
 #skills_bar__55 {
@@ -271,7 +271,7 @@ label {
 #skills_bar__55 > div:last-of-type {
     width: 45%;
     height: 5px;
-    background-color: var(--background-color);
+    background-color: #f5f6f8;
 }
 
 #skills__percentage {
@@ -285,7 +285,7 @@ label {
     flex-direction: column;
     justify-self: center;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: #f5f6f8;
 }
 
 #services__title {
@@ -378,6 +378,7 @@ label {
     text-align: center;
     margin: 0;
     padding: 0;
+    color: #f5f6f8;
 }
 
 #call-to-action__container {
@@ -393,12 +394,15 @@ label {
     border-radius: 5px;
     padding: 100px 20px;
     margin: 0;
+    color: #f5f6f8;
 }
 #call-to-action__left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    color: #f5f6f8;
+
 }
 
 #call-to-action__container::before {
@@ -422,6 +426,7 @@ label {
     font-size: 1.3rem;
     font-family: var(--heading-font);
     font-weight: 700;
+    color: white;
 }
 
 #call-to-action__content {
@@ -434,6 +439,8 @@ label {
     color: var(--default-color);
     font-size: .9rem;
     text-align: left;
+    color: white;
+
 }
 
 #call-to-action__right {
@@ -453,10 +460,10 @@ label {
     font-weight: 500;
     letter-spacing: .06rem;
     padding: 10px 30px;
-    border: 1px solid var(--default-color);
+    border: 1px solid white;
     border-radius: 20px;
 }
 
-#test {
-    height: 400px;
+#services__list > li, #why-us__ul > li {
+    display: block;
 }
