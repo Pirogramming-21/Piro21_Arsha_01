@@ -377,6 +377,11 @@ color-mix(in srgb, var(--default-color), transparent 60%);
 
 /* pricing section */ 
 
+#pricing .section-title{
+    padding-top: 50px;
+    background-color: #f5f6f8;
+}
+
 .pricing-plan {
     display: flex;
     justify-content: center;
@@ -384,6 +389,8 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     gap: 30px;
     flex-direction: column;
     align-items: center;
+    background-color: #f5f6f8;
+    padding-bottom: 50px;
 }
 
 .plan {
@@ -392,17 +399,23 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 30px;
     width: 100%;
-    max-width: 80%;
+    max-width: 540px;
     text-align: center;
 }
 
 .plan h3 {
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
     font-size: 24px;
     margin-bottom: 20px;
     color: var(--heading-color);
 }
 
 .plan .price {
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left;
     font-size: 48px;
     margin-bottom: 20px;
     color: var(--accent-color);
@@ -412,9 +425,12 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     list-style: none;
     padding: 0;
     margin: 0 0 30px 0;
+    text-align: left; /* 왼쪽 정렬 추가 */
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
 .plan ul li {
+    padding: 0;
     margin-bottom: 10px;
     color: var(--default-color);
 }
@@ -425,7 +441,9 @@ color-mix(in srgb, var(--default-color), transparent 60%);
 }
 
 .btn-wrap {
-    text-align: center;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: left; 
 }
 
 
@@ -464,6 +482,18 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+
+
+@media (min-width: 1000px) {
+    .pricing-plan {
+        flex-direction: row; /* 플렉스 방향을 행으로 변경 */
+    }
+    
+    .plan {
+        width: auto; /* 기본 너비 설정 해제 */           /* 안에 요소들 설정도 손 봐줘야한다. */
+        max-width: none; /* 최대 너비 설정 해제 */
+    }
+}
 
 
 
