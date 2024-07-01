@@ -494,3 +494,9 @@ label {
 #services__list > li, #why-us__ul > li {
     display: block;
 }
+
+#call-to-action__button > a:hover {
+    transition: .5s;
+    background-color: #47b2e4;
+    border: 1px solid #47b2e4;
+}
