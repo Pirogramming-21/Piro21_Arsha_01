@@ -129,19 +129,18 @@ label {
 }
 
 #list__content {
-    visibility: hidden;
-    position: absolute;
+    max-height: 0;
     opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 #content-btn1:checked ~ #list__content, 
 #content-btn2:checked ~ #list__content, 
 #content-btn3:checked ~ #list__content{
-	opacity: 1;
-	visibility: visible;
-    display: block;
-    position: relative;
-    transition: opacity .3s, visibility .3s ease;
+    max-height: 500px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
 }
 
 #content-btn1:checked ~ label #list__title, 
@@ -155,7 +154,7 @@ label {
     right: 20px;
     top: 10px;
     font-weight: 400;
-    transition: .3s;
+    transition: .5s;
 }
 
 #list__toggle:hover {
