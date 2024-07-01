@@ -14,6 +14,7 @@
 </head>
 <body>
     <header id="header">
+        
         <div class="logo"></div>
         <div class="preview-divices"></div>
         <div class="current-template"></div>
@@ -30,10 +31,155 @@
                         <section id="clients"></section>
                         <section id="about"></section>
                         <!-- 1번 파트 -->
-                        <section id="why-us"></section>
-                        <section id="skills"></section>
-                        <section id="services"></section>
-                        <section id="call-to-action"></section>
+                        <section id="why-us">
+                            <div id="why-us__left">
+                                <div id="why-us__title">
+                                    <p class="title__bold"><span>Eum ipsam laborum deleniti</span> <b>velit pariatur architecto aut nigil</b></p>
+                                    <p class="title__light"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</span></p>
+                                </div>
+                                <div id="why-us__content">
+                                    <ul id="why-us__ul">
+                                        <li>
+                                            <input id="content-btn1" type="checkbox"/>
+                                            <label for="content-btn1">
+                                                <div id="list__title">
+                                                    <span><span id="list__num">01</span>Non consectetur a erat nam at lectus urna duis?</span>
+                                                </div>
+                                            </label>
+                                            <label for="content-btn1">
+                                                <div id="list__toggle">></div>
+                                            </label>
+                                            <div id="list__content">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</div>
+                                        </li>
+                                        <li>
+                                            <input id="content-btn2" type="checkbox"/>
+                                            <label for="content-btn2">
+                                                <div id="list__title">
+                                                    <span><span id="list__num">02</span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
+                                                </div>
+                                            </label>
+                                            <label for="content-btn2">
+                                                <div id="list__toggle">></div>
+                                            </label>
+                                            <div id="list__content">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</div>
+                                        </li>
+                                        <li>
+                                            <input id="content-btn3" type="checkbox"/>
+                                            <label for="content-btn3">
+                                                <div id="list__title">
+                                                    <span><span id="list__num">03</span>Dolor sit amet consectetur adipiscing elit pellentesque?</span>
+                                                </div>
+                                            </label>
+                                            <label for="content-btn3">
+                                                <div id="list__toggle">></div>
+                                            </label>
+                                            <div id="list__content">Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</div>
+                                        </li>
+                                    </ul>   
+                                </div>
+                            </div>
+                            <div id="why-us__right">
+                                <img src="./img/why-us.png" alt="why-us image">
+                            </div>
+                        </section>
+                        <section id="skills">
+                            <div id="skills__left">
+                                <img src="./img/skills.png" alt="why-us image">
+                            </div>
+                            <div id="skills__right">
+                                <div id="skills_title">
+                                    <p class="title__bold"><b>Voluptatem dignissimos provident quasi corporis voluptas</b></p>
+                                    <p class="title__light"><span class="italics">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span></p>
+                                </div>
+                                <div id="skills__container">
+                                    <div id="skills__content">
+                                        <div id="skills__name">HTML</div>
+                                        <div id="skills_bar__100">
+                                            <div id="bar__100"></div>
+                                        </div>
+                                        <div id="skills__percentage">100%</div>
+                                    </div>
+                                    <div id="skills__content">
+                                        <div id="skills__name">CSS</div>
+                                        <div id="skills_bar__90">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div id="skills__percentage">90%</div>
+                                    </div>
+                                    <div id="skills__content">
+                                        <div id="skills__name">JAVASCRIPT</div>
+                                        <div id="skills_bar__75">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div id="skills__percentage">75%</div>
+                                    </div>
+                                    <div id="skills__content">
+                                        <div id="skills__name">PHOTOSHOP</div>
+                                        <div id="skills_bar__55">
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div id="skills__percentage">55%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- 1200px: 1*4->2*2 반응형 픽셀 기준(services) -->
+                        <section id="services">
+                            <div id="services__title">
+                                <h2>SERVICES</h2>
+                                <p><span>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</span></p>
+                            </div>
+                            <div id="services__content">
+                                <ul id="services__list">
+                                    <li>
+                                        <div id="services__icon">
+                                            <i class="bi bi-activity icon"></i>
+                                        </div>
+                                        <div id="services__name"><span>Lorem Ipsum</span></div>
+                                        <div id="services__description">
+                                            <span>Voluptatatum deleniti atque corrupti quos dolores et quas molestias excepturi</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div id="services__icon">
+                                            <i class="bi bi-bounding-box-circles icon"></i>
+                                        </div>
+                                        <div id="services__name"><span>Sed ut perspici</span></div>
+                                        <div id="services__description"><span>Duis aute irure door in reprehenderit in voluptate velit esse cillum dolore</span></div>
+                                    </li>
+                                    <li>
+                                        <div id="services__icon">
+                                            <i class="bi bi-calendar4-week icon"></i>
+                                        </div>
+                                        <div id="services__name"><span>Magni Dolores</span></div>
+                                        <div id="services__description"><span>Excepteur sint occascat cupidatat non proident, sunt in culpa qui officia</span></div>
+                                    </li>
+                                    <li>
+                                        <div id="services__icon">
+                                            <i class="bi bi-broadcast icon"></i>
+                                        </div>
+                                        <div id="services__name"><span>Nemo Enim</span></div>
+                                        <div id="services__description"><span>At vero eos et accusamust et iusto odio dignissimos ducimus qui blanditiis</span></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="call-to-action">
+                            <div id="call-to-action__container">
+                                <div id="call-to-action__left">
+                                    <div id="call-to-action__title">
+                                        <span>Call To Action</span>
+                                    </div>
+                                    <div id="call-to-action__content"><span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></div>
+                                </div>
+                                <div id="call-to-action__right">
+                                    <div id="call-to-action__button"><a href="#">Call To Action</a></div>
+                                </div>
+                            </div>
+                        </section>
                         <!--2번 파트  -->
                         <section id="portfolio"></section>
                         <section id="team"></section>
