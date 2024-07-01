@@ -48,7 +48,7 @@ label {
 .title__light {
     color: color-mix(in srgb, #444444, transparent 30%);
     font-family: var(--default-font);
-    padding: 0;
+    padding: 5px 0;
     margin: 0;
 }
 
@@ -97,6 +97,7 @@ label {
     justify-content: center;
     /* align-items: center; */
     padding-right: 50px;
+    gap: 10px;
 }
 
 #list__title {
@@ -193,6 +194,13 @@ label {
 
 #skills__container {
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#skills__name {
+    padding-bottom: 5px;
 }
 
 #skills__content {
