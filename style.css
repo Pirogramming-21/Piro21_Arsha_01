@@ -24,6 +24,9 @@ ul {
     list-style-type: none;
     padding: 0;
 }
+label {
+    cursor: pointer;
+}
 .italics {
     font-style: italic;
 }
@@ -43,7 +46,7 @@ ul {
 }
 
 .title__light {
-    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    color: color-mix(in srgb, #444444, transparent 30%);
     font-family: var(--default-font);
     padding: 0;
     margin: 0;
@@ -159,9 +162,9 @@ ul {
     color: var(--nav-dropdown-hover-color);
 }
 
-#content-btn1:checked + label #list__title #list__toggle, 
-#content-btn2:checked + label #list__title #list__toggle, 
-#content-btn3:checked + label #list__title #list__toggle {
+#content-btn1:checked + label + label #list__toggle, 
+#content-btn2:checked + label + label #list__toggle, 
+#content-btn3:checked + label + label #list__toggle {
     transform: rotate(90deg);
     color: var(--nav-dropdown-hover-color);
 }
