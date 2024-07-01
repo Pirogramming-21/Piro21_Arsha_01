@@ -197,15 +197,16 @@ color-mix(in srgb, var(--default-color), transparent 60%);
     color: #fff; /* 활성화 및 호버 시 텍스트 색상 */
 }
 
-.item_container {
+.item-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);   /* 하나의 줄에 3개의 요소 배치 (동일한 크기로) */
     gap: 10px;
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .item {
-
     color: white;
     text-align: center;
     padding: 20px;
@@ -222,24 +223,164 @@ color-mix(in srgb, var(--default-color), transparent 60%);
 
 
 @media (max-width: 900px) {                      /*전체 화면의 크기에 따라 반응하도록 */
-    .item_container {
+    .item-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 600px) {
-    .item_container {
+    .item-container {
         grid-template-columns: 1fr;
     }
 }
 
 
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개의 팀 멤버 배치 */
+    gap: 20px;
+    padding: 0 20px; /* 좌우 여백 추가 */
+    max-width: 80%;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto; /* 전체 컨테이너를 가운데 정렬 */
+}
+
+@media (max-width: 990px) {
+    .team-container {
+        grid-template-columns: 1fr; /* 한 줄에 1개의 팀 멤버 배치 */
+    }
+}
+
 .team-member {
     display: flex;
+
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* 박스에 그림자 나오게 하기 */
     margin-bottom: 30px;
     padding: 20px;
+    align-items: center; /* 내부 텍스트를 가운데 정렬 */
+}
+
+.team-member:hover{
+    transform: translateY(-10px); /* 요소를 위로 10px 이동 */
+}
+
+.pic {
+    flex: 0 0 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.member-info span {
+    display: block;
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    margin-bottom: 15px;
+}
+
+.social a {
+    color: #6c757d;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #007bff;
+}
+
+.pricing-plan {
+    display: flex;
+    justify-content: center;
+    /*align-items: stretch;*/
+    gap: 30px;
+    flex-direction: column;
     align-items: center;
 }
+
+.plan {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+}
+
+.plan h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+.plan .price {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    color: var(--default-color);
+}
+
+.plan ul li.na {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.btn-wrap {
+    text-align: center;
+}
+
+.btn-buy {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
+}
+
+
+
+
+
+
+
